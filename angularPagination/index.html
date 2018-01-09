@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consumer Details</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Styles -->
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body ng-app="myApp">
+	<center> <h1>Consumer Details:</h1> </center>
+	<div class="container wrapper">
+		<ui-view> </ui-view>
+	</div>
+</body>
+
+	<!--lib Scripts -->
+	<script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+    <script src="lib/dirPagination.js"></script>
+ 
+
+	<!--Main  module -->
+
+	 <script type="text/javascript" src="src/main.app.js"></script>
+
+	 <!-- Common module -->
+	 <script src="src/common/common.module.js"></script>
+	 <script src="src/common/consumer.service.js"></script>
+
+	<!-- public modules -->
+	<script src="src/public/public.module.js"></script>
+    <script src="src/public/public.route.js"></script>
+    <script src="src/public/home/home.controller.js"></script>
+    <script src="src/public/home/other.controller.js"></script>
+    <!-- <script src="src/public/consumer/consumer.component.js"></script> -->
+
+</html>

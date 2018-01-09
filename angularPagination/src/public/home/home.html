@@ -1,0 +1,97 @@
+<div>
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="search">Search :</label>
+            <input type="text" ng-model="search" class="form-control" placeholder="Search">
+        </div>
+    </form>
+</div>
+<div class="table-responsive">
+    
+
+    <table class="table  table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Email ID
+                </th>
+                <th>
+                    Mobile No
+                </th>
+                <th>
+                    Order Details
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+           <!--  <consumer ng-repeat="consumer in homeCtrl.consumers"
+                      category="consumer"> </consumer> fuck -->
+              <tr dir-paginate="consumer in homeCtrl.consumers| filter : search | itemsPerPage: pageSize" current-page="currentPage"">
+                    <td>
+                        {{consumer.id}}
+                    </td>
+                    <td>
+                        {{consumer.firstName}}
+                    </td>
+                    <td>
+                        {{consumer.key.primary}}
+                    </td>
+                    <td>
+                        {{consumer.key.secondary}}
+                    </td>
+                    <td>
+                        <center> <button type="button" class="btn btn-primary btn-small" style="padding: 10px;">Order Details</button></center>
+                    </td>
+            </tr>
+
+        </tbody>
+        
+    </table>
+	
+</div>
+
+<div ng-controller="otherController" class="other-controller">
+     
+          <div class="text-center">
+            <dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" template-url="src/public/home/dirPagination.tpl.html"></dir-pagination-controls>
+          </div>
+</div>
+
+
+<!-- 
+<ul>
+                <li dir-paginate="meal in meals | filter:q | itemsPerPage: pageSize" current-page="currentPage">{{ meal }}</li>
+                
+              </ul> -->
+ <!-- {
+        "id": 114,
+        "firstName": "Mohan Kumar",
+        "middleName": null,
+        "lastName": null,
+        "nickName": null,
+        "dob": null,
+        "status": null,
+        "homeAddress": null,
+        "workAddress": null,
+        "income": null,
+        "gcmToken": null,
+        "modified": 1485405494850,
+        "created": 1485405494850,
+        "contact": null,
+        "presPref": null,
+        "confPref": null,
+        "classification": null,
+        "key": {
+            "primary": "mkhrnexp@gmail.com",
+            "secondary": "8089966586"
+        },
+        "facebook": null,
+        "google": null,
+        "clocation": null
+    }, -->
