@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fancy alert Box</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sweet-alert.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body ng-app= "myApp">
+
+	<div class="container about">
+		<h1>About</h1>
+			<p>
+				This is a simple AngularJS wrapper for SweetAlert. Sweet Alert is a beautiful replacement for Javascript's "Alert".
+			</p>
+			<p>
+				SweetAlert was created by Tristan Edwards. ngSweetAlert was developed by oitozero.
+			</p>
+			<div>
+				<h5 class="inline"> Courtesy:</h5>
+				  <a href="https://github.com/oitozero/ngSweetAlert">oitozero</a>
+			</div>
+			
+	</div>
+
+	<div class="container">
+		<ui-view> 
+			<!-- Ui is here --> <center> <h4>Loading...</h4></center>
+		</ui-view>
+	</div>
+
+
+<!-- lib scripts -->
+	<script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+	<script src="lib/SweetAlert.min.js"></script>
+	<script src="lib/sweet-alert.min.js"></script>
+
+	<!-- Main app -->
+	<script src="src/main.app.js"></script>
+
+	<!-- public -->
+	<script src="src/public/public.module.js"></script>
+	<script src="src/public/public.router.js"></script>
+	<script src="src/public/public.controller.js"></script>
+</body>
+</html>

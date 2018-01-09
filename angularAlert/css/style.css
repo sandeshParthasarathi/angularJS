@@ -1,0 +1,33 @@
+body{
+
+}
+
+h1 {
+	color: #3c3b3b;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    line-height: 1.65;
+    text-transform: uppercase;
+}
+
+h1 {
+	color: #3c3b3b;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.about > p {
+	color: #878787;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.boxes{
+	margin-top: 30px;
+}
+
+.inline{
+	display: inline-block;
+	font-weight: 800;
+}
